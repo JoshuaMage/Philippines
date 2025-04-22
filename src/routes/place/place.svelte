@@ -1,6 +1,7 @@
 <script>
     import Boracay from '../../image/place/boracay/boracay.jpg';
-    import Palawan from '../../image/place/palawan/palawan.jpg'
+    import Palawan from '../../image/place/palawan/palawan.jpg';
+     import Banaue from '../../image/place/banaue/banaue.jpg'
     import { goto } from '$app/navigation';
     import PlaceSelection from '$lib/placeSelection.svelte';
 </script>
@@ -13,13 +14,19 @@
         <a class="relative group" href="/place/boracay">
             <PlaceSelection 
             imageSrc = {Boracay}
-            description="Boracay Island"
+            description="Boracay"
             />
         </a>
         <a class="relative group" href="/place/palawan">
             <PlaceSelection 
             imageSrc = {Palawan}
-            description="Palawan Island"
+            description="Palawan"
+            />
+        </a>
+        <a class="relative group" href="/place/banaue">
+            <PlaceSelection 
+            imageSrc = {Banaue}
+            description="Banaue"
             />
         </a>
     </div>
