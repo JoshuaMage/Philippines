@@ -1,34 +1,30 @@
 <script>
-    import Boracay from '../../image/place/boracay/boracay.jpg';
-    import Palawan from '../../image/place/palawan/palawan.jpg';
-     import Banaue from '../../image/place/banaue/banaue.jpg'
-    import { goto } from '$app/navigation';
-    import PlaceSelection from '$lib/placeSelection.svelte';
+	import Boracay from '../../image/place/boracay/boracay.jpg';
+	import Palawan from '../../image/place/palawan/palawan.jpg';
+	import Banaue from '../../image/place/banaue/banaue.jpg';
+	import Manila from '../../image/place/manila/Manila.jpg';
+	import { goto } from '$app/navigation';
+	import PlaceSelection from '$lib/placeSelection.svelte';
 </script>
 
-<div class="flex flex-col items-center mx-6">
-    <div>
-        <h1 class="font-bold text-xl font-[helvetica]">Most Popular Tourist Attractions in the Philippines</h1>
-    </div>
-    <div class="flex gap-4 mt-10">
-        <a class="relative group" href="/place/boracay">
-            <PlaceSelection 
-            imageSrc = {Boracay}
-            description="Boracay"
-            />
-        </a>
-        <a class="relative group" href="/place/palawan">
-            <PlaceSelection 
-            imageSrc = {Palawan}
-            description="Palawan"
-            />
-        </a>
-        <a class="relative group" href="/place/banaue">
-            <PlaceSelection 
-            imageSrc = {Banaue}
-            description="Banaue"
-            />
-        </a>
-    </div>
+<div class="m-10 flex flex-col items-center">
+	<div>
+		<h1 class="font-[helvetica] text-xl font-bold">
+			Most Popular Tourist Attractions in the Philippines
+		</h1>
+	</div>
+	<div class="mt-10 grid grid-cols-3 gap-10">
+		<a class="group relative" href="/place/boracay">
+			<PlaceSelection imageSrc={Boracay} description="Boracay" />
+		</a>
+		<a class="group relative" href="/place/palawan">
+			<PlaceSelection imageSrc={Palawan} description="Palawan" />
+		</a>
+		<a class="group relative" href="/place/banaue">
+			<PlaceSelection imageSrc={Banaue} description="Banaue" />
+		</a>
+		<a class="group relative" href="/place/manila">
+			<PlaceSelection imageSrc={Manila} description="Manila" />
+		</a>
+	</div>
 </div>
-
